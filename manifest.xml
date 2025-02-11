@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:type="TaskPaneApp">
+    <Id>12345678-abcd-1234-abcd-1234567890ab</Id>
+    <Version>1.0.0.0</Version>
+    <ProviderName>Your Name</ProviderName>
+    <DefaultLocale>en-US</DefaultLocale>
+    <DisplayName>Random Recurring Meetings</DisplayName>
+    <Description>Schedule meetings on random dates easily.</Description>
+    <Hosts>
+        <Host Name="Mailbox"/>
+    </Hosts>
+    <Requirements>
+        <Sets DefaultMinVersion="1.1">
+            <Set Name="Mailbox"/>
+        </Sets>
+    </Requirements>
+    <FormSettings>
+        <Form xsi:type="ItemRead">
+            <DesktopSettings>
+                <SourceLocation DefaultValue="https://localhost:3000/index.html"/>
+                <RequestedHeight>250</RequestedHeight>
+            </DesktopSettings>
+        </Form>
+    </FormSettings>
+    <Permissions>ReadWriteMailbox</Permissions>
+    <Rule xsi:type="RuleCollection" Mode="Or">
+        <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
+    </Rule>
+</OfficeApp>
