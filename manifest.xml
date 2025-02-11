@@ -19,7 +19,7 @@
     <FormSettings>
         <Form xsi:type="ItemRead">
             <DesktopSettings>
-                <SourceLocation DefaultValue="https://localhost:3000/index.html"/>
+                <SourceLocation DefaultValue="https://ianzav.github.io/outlook-random-meetings/index.html"/>
                 <RequestedHeight>250</RequestedHeight>
             </DesktopSettings>
         </Form>
